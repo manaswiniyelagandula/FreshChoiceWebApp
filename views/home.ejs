@@ -1,0 +1,103 @@
+<html>
+		<head>
+			<title>Fresh Choice BVRITH</title>
+			<link rel = "icon" href = "freshchoice_logo.png" type = "image/x-icon">
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width" initial-scale=1>
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>    
+		</head>
+		<style>
+			h2 {
+            	text-align: center;
+        	}
+			div{
+				color: black;
+				text-align: center;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+			}
+			img{
+				height: 150px;
+                width: 200px;
+				padding-bottom: 20px;
+			}
+			button{
+				margin-top: 10px;
+			}
+		</style>
+        <body>
+			<div class="container mt-3">
+				<div class="row" >
+					<div class="col-lg-1"><i class="bi bi-list" style="font-size: 2rem;"></i></div>
+					<div class="col-lg-1"><i class="bi bi-house-door-fill" style="font-size: 2rem;"></i></div>
+					<div class="col-lg-8"><h2 class="display-6" style="color:rgb(0, 0, 0);font-weight:500;">Fresh Choice Student's Cafe</h2></div>
+					<div class="col-lg-1"><i class="bi bi-person-circle" style="font-size: 2rem;"></i></div>
+					<div class="col-lg-1"><i class="bi bi-cart-fill" style="font-size: 2rem;"></i></div>
+                <div class="row">
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="burger.jpg"/>
+						<b><br>Burger</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="Cost" value="160/-" readonly><br><button type="submit" class="btn btn-primary" name="item" value="Burger">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="hotdog.jpg" >
+						<b><br>Hot Dog</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="Cost" value="150/-" readonly><br><button type="submit" class="btn btn-primary" name="item" value="Hot Dog">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="vegpuff.jpg" >
+						<b><br>Veg Puff</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="Cost" value="110/-" readonly><br><button type="submit" class="btn btn-primary" name="item" value="Veg Puff">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="frenchfry.jpg">
+						<b><br>French Fries</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="Cost" value="75/-" readonly><br><button type="submit" class="btn btn-primary" name="item" value="French Fries">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="sandwich.jpg" >
+						<b><br>Cheese Sandwich</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="Cost" value="65/-" readonly><br><button type="submit" class="btn btn-primary" name="item" value="Cheese Sandwich">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="pizza.jpg" >
+						<b><br>Pizza</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="Cost" value="100/-" readonly><br><button type="submit" class="btn btn-primary" name="item" value="Pizza">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="chocomilk.jpg" >
+						<b><br>Chocolate Milkshake</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="Cost" value="150/-" readonly><br><button type="submit" class="btn btn-primary" name="item" value="Chocolate Milkshake">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="pastry.jpg">
+						<b><br>Chocolate Pastry</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="Cost" value="190/-" readonly><br><button type="submit" class="btn btn-primary" name="item" value="Chocolate Pastry">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="pasta.jpg">
+						<b><br>Pasta</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="Cost" value="140/-" readonly><br><button type="submit" class="btn btn-primary" name="item" value="Pasta">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+                    <div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="Veg Manchuriya.jpg" >
+						<b><br>Veg Manchuriya</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="Cost" value="120/-" readonly><br><button type="submit" class="btn btn-primary" name="item" value="Veg Manchuriya">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="Red velvet cupcake.jpg">
+						<b><br>Red velvet cupcake</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="Cost" value="60/-" readonly><br><button type="submit" class="btn btn-primary" name="item" value="Red velvet cupcake">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img roundbtn btn-successed" src="Donuts.jpg">
+						<b><br>Donuts</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="Cost" value="70/-" readonly><br><button type="submit" class="btn btn-primary" name="item" value="Donuts">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="samosa.jpg">
+						<b><br>Samosa</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="Cost" value="50/-" readonly><br><button type="submit" class="btn btn-primary" name="item" value="Samosa">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="coffee.jpg">
+						<b><br>Coffee</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="Cost" value="60/-" readonly><br><button type="submit" class="btn btn-primary" name="item" value="Coffee">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img roundbtn btn-successed" src="fruit_smoothies.jpg">
+						<b><br>Fruit Smoothies</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="Cost" value="80/-" readonly><br><button type="submit" class="btn btn-primary" name="item" value="Fruit Smoothies">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+                </div><br><br>
+				<form action="cart" method="GET">
+					<center><input type="submit" class="btn btn-dark" style="width:30%;font-weight: bold; color: white;" value="VIEW CART"></center>
+				</form><br><br>
+            </div>
+		</body>
+</html>

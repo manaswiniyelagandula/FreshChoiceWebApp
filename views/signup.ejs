@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <title>Fresh Choice BVRITH Students Cafe</title>
+        <link rel = "icon" href = "freshchoice_logo.png" type = "image/x-icon">
+        <style>
+              body{
+                height: 200px;
+                background-color: #f30f0f;   
+                background: url(freshchoice_logo.png);
+                background-size: 36%;
+                background-position: center;
+                background-image: bottom;
+            }
+    .codehim-form{
+        max-width: 500px;
+        min-height: 450px;
+        box-sizing: border-box;
+        background: #f30f0f;
+        ;
+        box-shadow: 4px 2px 16px rgba(0, 0, 0, 0.4);
+        border-radius: 8px;
+        margin:  20px auto 0 auto;
+        margin-top:100px;
+        padding: 25px;
+        color:rgb(250, 245, 246);
+            
+    }
+    .cm-input{display: block;
+        box-sizing: border-box;
+        padding: 10px;
+        width: 100%; 
+        margin: 14px auto;
+        border-radius: 20px;
+        border: 1px solid #ccc;
+        
+        
+    }
+    .cm-input:focus{
+        outline: 0;
+        border-color: #f9cb81;
+        
+    }
+    .cm-input:invalid{
+        border-color: #e41b17;
+        
+    }
+    .btn-login{
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border: 0;
+        color: #fff;
+        border-radius: 20px;
+        cursor: pointer;
+        
+    }
+    .btn-login:focus{
+        outline: 0;
+    }
+    
+    .btn-login:hover{
+        opacity: 0.8;
+        transition: .3s;
+    }
+    
+    /* Gradient Background */
+    .gr-bg{
+        background: rgb(0, 0, 0);
+        background: linear-gradient(90deg,rgb(0, 0, 0) 0%, rgb(0, 0, 0) 55%, rgb(0, 0, 0) 100%);   
+    }
+     /* For, tiele */
+     .form-title{
+        padding: 12px;
+        text-align: center;
+        position: relative;
+    }
+    .form-title h2{
+        color: rgb(250, 245, 246);
+    }
+    .form-title .user-icon{
+        position: absolute;
+        font-size: 42px;
+        color: #fff;
+        width: 90px;
+        height: 90px;
+        line-height: 90px;
+        text-align: center;
+        border-radius: 45px;
+        top: -30px;
+        left: -45px;
+}
+        </style>
+    </head>
+    <body>
+        <div class="codehim-form">
+        <div class="form-title">
+           <div class="user-icon gr-bg">
+              <i class="fa fa-user"></i>
+           </div>
+           <h2> Sign Up Here!!</h2>
+        </div>
+        <form action="signupsubmit" method="GET">
+        <label for="email"><i class="fa fa-envelope"></i> Email:</label>
+        <input type="email" name="email" id="email" class="cm-input" placeholder="Enter your email adress">
+        <label for="pass"><i class="fa fa-lock"></i> Password:</label>
+        <input id="pass" type="password" name="pwd" class="cm-input" placeholder="Enter your password">
+        <button type="submit" class="btn-login  gr-bg">Sign Up</button>
+        </div>
+     </form>
+    </body>
+</html>
